@@ -1,0 +1,23 @@
+<div class="navbar">
+  <%= link_to 'Mes Articles', articles_path %>
+  <%= link_to 'Nouvel article', new_article_path %>
+</div>
+
+
+<div class="container">
+  <h1> Mes articles</h1>
+  <% @articles.each do |article|%>
+      <div class="cards">
+        <h2><%= link_to article.title, article_path(article) %></h2>
+        <p><%= article.content %></p>
+        <div class="action">
+          <p><%= link_to 'editer', edit_article_path(article) %></p>
+          <p><%= link_to 'supprimer', article_path(article),
+            method: :delete,
+            data: { confirm: "Are you sure?" }
+          %>
+          </p>
+        </div>
+      </div>
+  <% end %>
+</div>

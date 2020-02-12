@@ -1,0 +1,68 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  width : 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards {
+  background-color: black;
+  margin-top :10px;
+  margin-bottom :10px;
+  border-radius : 5px;
+  box-shadow: 10px 5px 5px red;
+}
+.cards h2 {
+  color : red;
+  margin-left : 5px;
+  font-family: 'Germania One', cursive;
+}
+.cards p {
+  color: white;
+  margin-left : 5px;
+  font-family: 'Germania One', cursive;
+}
+
+h1 {
+  font-family: 'Germania One', cursive;
+}
+
+body {
+  background-color : #540400;
+  background : no-repeat;
+  background: linear-gradient(#540400, #2D0200);
+}
+
+.body-pour-le-reste {
+  height : 100vh;
+  width : 100vh;
+  background-color : #540400;
+  background : no-repeat;
+  background: linear-gradient(#540400, #2D0200);
+}
+
+.navbar{
+  border-bottom: 1px solid red;
+  color : white;
+  display : flex;
+  justify-content : space-between;
+}
+
+a {
+  text-decoration: none;
+  color : white;
+  font-family: 'Germania One', cursive;
+}
+
+.button {
+  padding : 12px 25px;
+  border-radius: 5px;
+  background-color : black;
+  color: white;
+  border-color: gray;
+}
